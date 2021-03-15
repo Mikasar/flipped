@@ -1,0 +1,52 @@
+{   
+    "dna": {
+        "msg1": "Start with romance and blend in with ease.",
+        "msg2": "Create an unfettered, self-enjoying dimension for women."
+    },
+    "sider": {
+        "dna": "DNA",
+        "project": "PROJECT",
+        "contact": "CONTACT"
+    },
+    "contact": {
+        "shanghai": "Shanghai, China",
+        "taobao": "Taobao",
+        "weixin": "Wechat",
+        "weibo": "Vlog",
+        "hongshu": "Xiaohongshu"
+    },
+    "ep": {
+        "p1": "Every year, about 8000000 tons of plastic waste escapes into the oceans from coastal nations.",
+        "p2": "Millions of animals are killed by plastics every year, from birds to fish to other marine organ-",
+        "p3": "isms. Nearly 700 species, including endangered ones, are known to have been affected by plas-",
+        "p4": "tics. Nearly every species of seabird eats plastics.",
+        "p5": "It is harder to be unconcerned about it. Despite the higher cos ts of sustainable products, there-",
+        "p6": "are all good things about using sustainable materials to make o ur planet feel better. In fact ,ev-",
+        "p7": "eryone knows it is the right thing to do, and we are just sim ply DOING IT.",
+        "p8": "The Experiment Continues...",
+        "p9": "EXPERIMENT RESULTS",
+        "p10": "PLASTIC FREE",
+        "product-name": "PRODUCT NAME",
+        "feature": "FEATURE",
+        "decomposition": "DECOMPOSITION",
+        "decomposition-cycle": "DECOMPOSITION CYCLE",
+        "recyclability": "RECYCLABILITY",
+        "usage": "USAGE",
+        "name1": "Tyvek® Paper Bag",
+        "feature1": "Anti-Bacteria;Waterproof; Aging Resistance; Folding Resistance",
+        "decomposition1": "The product of tyvek® after Complete combustion are carbon dioxide and water.",
+        "usage1": "For sweated clothes after working out or anything else",
+        "high": "High",
+        "name2": "Kraft Shipping Bag",
+        "feature2": "Tear Resistance; MoistureResistance; Hard To Deform",
+        "decompositionCycle2": "2-4 Months",
+        "usage2": "Compost or recycle after tearing off decomposible Tape",
+        "name3": "Metallic Brooch",
+        "feature3": "High Hardness;High Densi -Ty;High Melting Point",
+        "usage3": "PIN IT ANYWHERE YOU WANT",
+        "name4": "Kraft Envelope",
+        "feature4": "Tear Resistance; MoistureResistance; Hard To Deform",
+        "decompositionCycle4": "2-4 Months",
+        "usage4": "For organizing any small items or be creative"
+    }
+}

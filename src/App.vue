@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sider />
+    <router-view class="app-container" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Sider from '@/components/common/Sider'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    sider: Sider
+  },
+  created() {
+    document.getElementById('app').style.fontFamily = localStorage.getItem('lang') !== 'en' ? 'SYR' : 'MAXIL'
   }
 }
 </script>
 
 <style>
+@import './assets/font/font.css';
+/* @import './mixin.scss'; */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
+  display: flex;
+  height: 100vh;
+  padding: 0;
+}
+
+.app-container {
+  flex: 1;
 }
 </style>
