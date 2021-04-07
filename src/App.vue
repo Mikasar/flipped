@@ -13,12 +13,14 @@ export default {
     sider: Sider
   },
   created() {
-    document.getElementById('app').style.fontFamily = localStorage.getItem('lang') !== 'en' ? 'SYR' : 'MAXIL'
+    // console.log(document.documentElement.style.fontFamily)
+    document.documentElement.style.fontFamily = localStorage.getItem('lang') !== 'en' ? 'SYR' : 'MAXIL'
+    // console.log(document.documentElement.style.fontFamily)
   }
 }
 </script>
 
-<style>
+<style type="text/css">
 @import './assets/font/font.css';
 /* @import './mixin.scss'; */
 #app {

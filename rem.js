@@ -1,19 +1,28 @@
-var fun = function (doc, win) {
-  var docEl = doc.documentElement,
-      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-      recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
-          // 这里是假设在750px宽度设计稿的情况下，1rem = 100px；
-          // 可以根据实际需要修改 
-          // 1920 响应的最大屏幕
-          docEl.style.fontSize = (clientWidth / 1440) * 100 + 'px';
-      };
-  if (!doc.addEventListener) return;
-  win.addEventListener(resizeEvt, recalc, false);
-  doc.addEventListener('DOMContentLoaded', recalc, false);
-}
-fun(document, window);
-window.onresize = function () {
-  fun(document, window);
-}
+(function(win) {
+  var doc = win.document;
+  var docEl = doc.documentElement;
+  var tid;
+
+  function refreshRem() {
+      var width = docEl.getBoundingClientRect().width;
+      if (width > 1920) {
+          docEl.style.fontSize = (12 * (width / 1920)) + 'px'
+      } else if (width >= 1024 && width <= 1920) {
+          docEl.style.fontSize = (16 * (width / 1920)) + 'px';
+      } else {
+          docEl.style.fontSize = (16 * (width / 320)) + 'px';
+      }
+      // console.log(docEl.style.fontSize + '/' + width)
+  }
+  win.addEventListener('resize', function() {
+      clearTimeout(tid);
+      tid = setTimeout(refreshRem, 0);
+  }, false);
+  win.addEventListener('pageshow', function(e) {
+      if (e.persisted) {
+          clearTimeout(tid);
+          tid = setTimeout(refreshRem, 0);
+      }
+  }, false);
+  refreshRem();
+})(window);

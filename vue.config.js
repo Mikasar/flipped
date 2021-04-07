@@ -50,6 +50,7 @@ module.exports = {
     },
 
     chainWebpack: config => {
+        /*
         config.module
             .rule('css')
             .test(/\.css$/)
@@ -60,6 +61,7 @@ module.exports = {
             .options({
                 remUnit: 144
             })
+        */
         // 解决ie11兼容ES6
         config.entry('main').add('babel-polyfill')
         // 开启图片压缩
@@ -91,11 +93,12 @@ module.exports = {
             css: {},
             postcss: {
                 plugins: [
-                    require("postcss-plugin-px2rem")({
-                        rootValue: 144,
-                        exclude: /(node_module)/,
-                        mediaQuery: false,
-                        minPixelValue: 2
+                    require("postcss-pxtorem")({
+                        rootValue: 14,
+                        // exclude: /(node_module)/,
+                        // mediaQuery: false,
+                        // minPixelValue: 2
+                        propList: ['*']
                     })
                 ]
             }
