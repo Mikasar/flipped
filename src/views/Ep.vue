@@ -151,8 +151,7 @@ export default {
 }
 
 .detail-background {
-    width: 1390px;
-    height: 780px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -161,8 +160,8 @@ export default {
     width: 710px;
     height: 500px;
     position: absolute;
-    top: 140px;
-    left: 340px;
+    top: calc(50% - 250px);
+    left: calc(50% - 355px);
     cursor: pointer;
     display: flex;
     align-items: center;

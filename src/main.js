@@ -6,7 +6,7 @@ import router from './router'
 import VueI18n from 'vue-i18n'
 import 'element-ui/lib/theme-chalk/index.css'
 import { Carousel, CarouselItem, Image, Popover } from 'element-ui'
-import '../rem.js'
+// import '../rem.js'
 import MetaInfo from 'vue-meta-info'
 
 Vue.use(Carousel)

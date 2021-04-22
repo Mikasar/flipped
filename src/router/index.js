@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dna from '@/views/Dna'
-import Project from '@/views/Project'
-import Contact from '@/views/Contact'
-import Ep from '@/views/Ep'
+// import Dna from '@/views/Dna'
+// import Project from '@/views/Project'
+// import Contact from '@/views/Contact'
+// import Ep from '@/views/Ep'
 
 Vue.use(Router)
 
@@ -17,22 +17,22 @@ export default new Router({
     {
       path: '/Dna',
       name: 'Dna',
-      component: Dna
+      component: resolve => require(['@/views/Dna'], resolve)
     },
     {
       path: '/Project',
       name: 'Project',
-      component: Project
+      component: resolve => require(['@/views/Project'], resolve)
     },
     {
       path: '/Contact',
       name: 'Contact',
-      component: Contact
+      component: resolve => require(['@/views/Contact'], resolve)
     },
     {
       path: '/Ep',
       name: 'Ep',
-      component: Ep
+      component: resolve => require(['@/views/Ep'], resolve)
     }
   ],
   mode: 'history'

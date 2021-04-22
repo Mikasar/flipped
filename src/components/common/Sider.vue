@@ -73,7 +73,7 @@ export default {
 <style scoped>
 .sider {
   flex: 0 1 30px;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -87,7 +87,7 @@ a {
   -moz-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   display: block;
-  margin: 6vh 0;
+  margin: 60px 0;
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-1);
   text-decoration: none;
   color: #000;
@@ -105,7 +105,7 @@ a {
   height: 16px;
   position: absolute;
   display: none;
-  top: 4px;
+  top: 2px;
 }
 
 .left {
@@ -135,8 +135,8 @@ a {
 
 .lang {
   position: absolute;
-  width: 32px;
-  height: 40px;
+  width: 28px;
+  height: 35px;
   top: 10px;
   right: 0;
   cursor: pointer;
